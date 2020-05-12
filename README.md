@@ -10,7 +10,7 @@ Because python is single threaded I'm using multiprocessing library to paralleli
 I've defined a process-safe Queue which stores the tasks which are processes asynchronously by the consumers.
 I decided to spawn at least two workers for every core available.
 
-THis approach allows me to send out 
+This approach allows me to distribute task among adjustable number of workers and gain a massive speed up compared to a naive approch in which every message is sent out one by one in the main thread. 
 
 
 ### Testing:
