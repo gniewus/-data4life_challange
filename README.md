@@ -5,10 +5,7 @@ Please write a program in your prefered language that will send out emails to re
 
 ## Approach
 
-To solve this problem i'm going to use Python. 
-Because python is single threaded I'm using multiprocessing library to parallelize the tasks of sending out emails.
-I've defined a process-safe Queue which stores the tasks which are processes asynchronously by the consumers.
-I decided to spawn at least two workers for every core available.
+To solve this problem i'm going to use Python.  Because python is single threadedm, I decided to use multiprocessing library to parallelize the (mock) computations. I've defined a process-safe queue for the tasks which are then processes asynchronously by the consumers. For the optimal utilisation of resources it's good to spawn at least two workers for every core available.
 
 This approach allows me to distribute task among adjustable number of workers and gain a massive speed up compared to a naive approch in which every message is sent out one by one in the main thread. 
 
