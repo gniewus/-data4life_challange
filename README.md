@@ -28,10 +28,10 @@ $ python main.py --jobs 100 --workers 4
 
 #### 24 Consumers (2 per core)
 
-- 10 emails : 0.5264360 second
-- 100 emails : 2.5321319103240967 seconds
-- 1000 emails : 21.09543490409851 seconds
-- 10000 emails : 209.1258671283722 seconds
+- 10 emails : ca. 0.5 second
+- 100 emails : ca. 2.53 seconds
+- 1000 emails : ca. 21.1 seconds
+- 10000 emails : ca. 209 seconds
 - 100000 emails : ca. 2000 seconds ~ 1h 6 min 
 - 1000000 emails : ca. 20 000 seconds ~ 5h 30 minutes
 
@@ -40,4 +40,4 @@ $ python main.py --jobs 100 --workers 4
 - 100 emails : 0.5 seconds
 - 1000 emails : 3 seconds
 - 10 000 emails : 27 seconds
-- 100 000 emails : circa 274.715373039 seconds
+- 100 000 emails : 274 seconds
